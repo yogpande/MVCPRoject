@@ -160,6 +160,9 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\MyAdmin\Controllers\AccountsController.cs" />
+    <Compile Include="Areas\MyAdmin\Controllers\DashboardController.cs" />
+    <Compile Include="Areas\MyAdmin\MyAdminAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,6 +213,10 @@
     <Content Include="assets\sass\paper\_tables.scss" />
     <Content Include="assets\sass\paper\_typography.scss" />
     <Content Include="assets\sass\paper\_variables.scss" />
+    <Content Include="Areas\MyAdmin\Views\web.config" />
+    <Content Include="Areas\MyAdmin\Views\Shared\adminLayout.cshtml" />
+    <Content Include="Areas\MyAdmin\Views\Dashboard\Index.cshtml" />
+    <Content Include="Areas\MyAdmin\Views\Accounts\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -219,6 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\MyAdmin\Models\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
